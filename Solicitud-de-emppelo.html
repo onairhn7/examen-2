@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- cabecera -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome javascript -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8a95418718.js" crossorigin="anonymous"></script>
+  <!-- Datepicker CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <title>Alcaldia Municipal de San Pedro sula</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="logo">
+      <img src="img/logo.png" alt="">
+      </div>
+        <header class="text-center text-uppercase my-5">
+            <h1 class="fs-3">Alcaldia Municipal de San Pedro sula</h1>
+            <h1 class="fs-1">Solicitud de empleo</h1>
+
+        </header>
+        <p>
+          La Alcaldia Municipal de San Pedro Sula, esta contratando trabajadores para llevar a cabo varias obras de infraestructura.
+          Si desea aplicar a un puesto de trabajo, le pedimos que lea con detenimiento y llene todos los campos solicitados.
+        </p>
+
+        <div>
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <h3>
+                        Datos Personales
+                    </h3>
+                </div>
+                <div class="col-md-6">
+                    <label for="primerApellido" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombreCompleto" value="" placeholder="Mario Joel Perez Zavala"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="segundoApellido" class="form-label">Cédula</label>
+                    <input type="text" class="form-control" id="Cedula" value="" placeholder="1706-1992-00376"
+                        required>
+                </div>
+              </div>
+              <div class="col-md-10">
+                  <label for="nombre" class="form-label">Direccion exacta</label>
+                  <input type="text" class="form-control" id="direccionExacta" value="" placeholder="E.j Barrio el bosque, frente a pulper" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="primerApellido" class="form-label">Telefono</label>
+                  <input type="text" class="form-control" id="Telefono" value="" placeholder="9888-6583"
+                      required>
+              </div>
+              <div class="col-md-6">
+                  <label for="primerApellido" class="form-label">Fax</label>
+                  <input type="text" class="form-control" id="Telefono" value="" placeholder="2333-0958"
+                      required>
+              </div>
+              <div class="col-md-6">
+                  <label for="primerApellido" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="Email" value="" placeholder="leo18cabrera@gmail.com"
+                      required>
+              </div>
+              <div class="col-md-12">
+                  <h3>
+                      Lugar fecha y orden de nacimiento
+                  </h3>
+              </div>
+              <div class="col-md-4">
+                  <label class="form-check-label" for="ciudad">
+                      Pais
+                  </label>
+                  <select class="form-select" id="ciudad" aria-label="Ciudades">
+                      <option selected>Seleccione</option>
+                      <option value="1">Honduras</option>
+                      <option value="2">El Salvador</option>
+                      <option value="3">Nicaragüa</option>
+                      <option value="3">Costa Rica</option>
+                      <option value="3">Guatemala</option>
+                      <option value="3">Panamá</option>
+                    </select>
+              </div>
+
+              <div class="col-md-4">
+                  <label class="form-check-label" for="ciudad">
+                      Departamento
+                  </label>
+                  <select class="form-select" id="ciudad" aria-label="Ciudades">
+                      <option selected>Seleccione</option>
+                      <option value="1">Francisco Morazán</option>
+                      <option value="2">Cortés</option>
+                      <option value="3">Colón</option>
+                      <option value="3">Olancho</option>
+                    </select>
+              </div>
+
+              <div class="col-md-4">
+                  <label class="form-check-label" for="ciudad">
+                      Ciudad
+                  </label>
+                  <select class="form-select" id="ciudad" aria-label="Ciudades">
+                      <option selected>Seleccione</option>
+                      <option value="1">Tegucigalpa</option>
+                      <option value="2">San Pedro Sula</option>
+                      <option value="3">La Ceiba</option>
+                      <option value="3">Choluteca</option>
+                      <option value="3">Olancho</option>
+                    </select>
+              </div>
+
+                <!--Datepicker-->
+                <div class="col-12">
+                    <label for="date">Fecha de nacimiento</label>
+                       <div class="input-group date">
+                           <input type="text" class="form-control" id="datepicker">
+                           <span class="input-group-append">
+                               <span class="input-group-text bg-white d-block">
+                                   <i class="fa fa-calendar"></i>
+                               </span>
+                           </span>
+                       </div>
+                 </div>
+                 <div class="col-md-2">
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="radioSexo" id="radioMasculino" checked>
+                         <label class="form-check-label" for="radioMasculino">
+                             Soltero
+                         </label>
+                     </div>
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="radioSexo" id="radioFemenino">
+                         <label class="form-check-label" for="radioFemenino">
+                             Casado
+                         </label>
+                     </div>
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="radioSexo" id="radioFemenino">
+                         <label class="form-check-label" for="radioFemenino">
+                             Viudo
+                         </label>
+                     </div>
+                 </div>
+
+                <div class="col-md-12">
+                    <h3>
+                        Información de los padres
+                    </h3>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>
+                        Datos del Padre
+                    </h4>
+                </div>
+                <div class="col-md-6">
+                    <label for="primerApellidoPadre" class="form-label">Primer apellido</label>
+                    <input type="text" class="form-control" id="primerApellidoPadre" value="" placeholder="ej. Reeve"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="segundoApellidoPadre" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="segundoApellidoPadre" value="" placeholder="ej. Musk"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nombrePadre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombrePadre" value="" placeholder="ej. Elon" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadPadre" class="form-label">Nacionalidad</label>
+                    <input type="text" class="form-control" id="nacionalidadPadre" value="" placeholder="ej. Hondureña" required>
+                </div>
+                <div class="col-md-12">
+                <h4>
+                    Datos de la Madre
+                </h4>
+                </div>
+                <div class="col-md-6">
+                    <label for="primerApellidoMadre" class="form-label">Primer apellido</label>
+                    <input type="text" class="form-control" id="primerApellidoMadre" value="" placeholder="ej. Preston"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="segundoApellidoMadre" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="segundoApellidoMadre" value="" placeholder="ej. Bezos"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nombreMadre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreMadre" value="" placeholder="ej. Jeff" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Nacionalidad</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. Hondureña" required>
+                </div>
+                <div class="col-md-12">
+                <h4>
+                    Datos del conyugue
+                </h4>
+                </div>
+                <div class="col-md-6">
+                    <label for="primerApellidoMadre" class="form-label">Primer apellido</label>
+                    <input type="text" class="form-control" id="primerApellidoMadre" value="" placeholder="ej. Preston"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="segundoApellidoMadre" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="segundoApellidoMadre" value="" placeholder="ej. Bezos"
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nombreMadre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreMadre" value="" placeholder="ej. Jeff" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Nacionalidad</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. Hondureña" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Numero de Hijos</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. 5 hijos" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">No. de Dependientes</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. Hondureña" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Profesion u oficio</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. Albañil" required>
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Puesto Solicitado</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. Albañil" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Fecha Disponible</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. 1 enero" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Aspiracion Salarial</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. 15 mil lempiras" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Si posee licencia de conducir, especifique cual</label>
+                    <input type="text" class="form-control" id="licencia" value="" placeholder="ej. Pesada" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Tipo sangre</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. A positivo" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Padece de algun tipo de enfermedad</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. SIDA" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Tiene parientes que trabajen en la municipalidad</label>
+                    <input type="text" class="form-control" id="Parientes" value="" placeholder="ej. Si, No" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Ha trabajado para el Estado, si su respuesta es positiva anote la institucion, el puesto y el peridodo de tiempo que trabajo</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="ej. INFOP, Conserje, 2015-2017" required>
+                </div>
+
+                <div class="col-md-12">
+                    <h3>
+                        Estudios
+                    </h3>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Primaria</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="Del campo, 1990-1995" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Secundaria</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="Del campo, 1995-2000" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Titulo de Secundaria</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="Bachiller Tec. Mecanica" required>
+                </div>
+                <div class="col-md-12">
+                <h5>
+                    Para curso talleres u otros: adiccione documento
+                </h5>
+                <div class="col-md-6">
+                    <label for="nacionalidadMadre" class="form-label">Estuda actualmente</label>
+                    <input type="text" class="form-control" id="Estudia" value="" placeholder="Si, No" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="siEstudia" class="form-label">si su respuesta es postiva, indique que estudia</label>
+                    <input type="text" class="form-control" id="nacionalidadMadre" value="" placeholder="Soldadura" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="siEstudia" class="form-label">Descbriba sus aptitudes laborales,tome en consideracion los vehiculos, equipos y herraminetas que sabe operar,<br> y cualquier informacion adicional que considere relevante</label>
+                    <input type="text" class="form-control" id="aptitudes" value="" placeholder="Manejo vehiculos pesados" required>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--Datepicker-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+            $(document).ready(function () {
+                $('#datepicker').datepicker();
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+    </script>
+</body>
+
+</html>
